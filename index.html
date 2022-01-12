@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Capsid.js • TodoMVC</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="todoapp">
+      <header class="header">
+        <h1>todos</h1>
+        <input
+          class="new-todo"
+          autofocus
+          autocomplete="off"
+          placeholder="What needs to be done?"
+        />
+      </header>
+      <section class="main hidden">
+        <input id="toggle-all" class="toggle-all hidden" type="checkbox" />
+        <label for="toggle-all">Mark all as complete</label>
+        <ul class="todo-list"></ul>
+      </section>
+      <footer class="footer hidden">
+        <span class="todo-count">
+          <strong></strong>
+          item<span class="plural">s</span>
+          left
+        </span>
+        <ul class="filters">
+          <li><a href="#/all">All</a></li>
+          <li><a href="#/active">Active</a></li>
+          <li><a href="#/completed">Completed</a></li>
+        </ul>
+        <button class="clear-completed">Clear completed</button>
+      </footer>
+    </section>
+    <footer class="info">
+      <p>Double-click to edit a todo</p>
+      <p>Written by <a href="https://github.com/kt3k">Yoshiya Hinosawa</a></p>
+      <p>Part of <a href="https://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <script src="src/index.ts"></script>
+  </body>
+</html>

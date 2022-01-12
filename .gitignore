@@ -1,0 +1,4 @@
+cypress
+node_modules
+.cache
+dist

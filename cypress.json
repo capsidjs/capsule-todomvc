@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:8000/",
+  "viewportWidth": 890,
+  "numTestsKeptInMemory": 1,
+  "projectId": "capsid-todomvc2"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "capsule-todomvc",
+  "version": "1.0.0",
+  "description": "TodoMVC of capsule",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-server-and-test start http://localhost:8000 'cypress run'",
+    "clean": "rimraf docs",
+    "start": "parcel --port 8000 index.html",
+    "build": "parcel build --public-url . --out-dir docs index.html",
+    "dist": "npm run clean && npm run build",
+    "fmt": "prettier --single-quote --write src cypress index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capsidjs/todomvc2.git"
+  },
+  "keywords": [
+    "capsid",
+    "todomvc"
+  ],
+  "author": "Yoshiya Hinosawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capsidjs/todomvc2/issues"
+  },
+  "homepage": "https://github.com/capsidjs/todomvc2#readme",
+  "dependencies": {
+    "@kt3k/capsule": "^0.5.1",
+    "todomvc-app-css": "^2.3.0",
+    "todomvc-common": "^1.0.5"
+  },
+  "devDependencies": {
+    "cypress": "^5.4.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "start-server-and-test": "^1.11.5",
+    "typescript": "^4.0.3"
+  }
+}
