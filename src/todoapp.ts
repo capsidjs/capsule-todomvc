@@ -11,7 +11,8 @@ let todos: TodoCollection;
 
 const { on } = component("todoapp");
 
-on.__mount__ = ({ query, emit }) => {
+on.__mount__ = ({ el, query, emit }) => {
+  (el as HTMLElement).dataset.framework = "capsule";
   todos = TodoCollection.restore();
   id = todos.maxId() + 1;
 

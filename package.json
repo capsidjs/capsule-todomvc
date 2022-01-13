@@ -8,7 +8,7 @@
     "clean": "rimraf docs",
     "start": "parcel --port 8000 index.html",
     "build": "parcel build --public-url . --out-dir docs index.html",
-    "dist": "npm run clean && npm run build",
+    "dist": "npm run clean && npm run build && cp learn.json docs/",
     "fmt": "prettier --single-quote --write src cypress index.html"
   },
   "repository": {
