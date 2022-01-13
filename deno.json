@@ -1,0 +1,11 @@
+{
+  "fmt": {
+    "files": {
+      "exclude": [
+        "node_modules",
+        ".cache",
+        "docs"
+      ]
+    }
+  }
+}
